@@ -1,20 +1,36 @@
 package lesson6_DZ;
 
 public class Animals {
-    String name;
-    String color;
-    int age;
-    int length;
+    String name; //Имя животного
+    String color; //Окраска
+    int age; //Во3раст
+    int jump; //Прыжок
+    int run; //Бег
+    int swim; //Плавание
+    int limitRun; //Максимальное расстояние для бега
+    int limitJump; //Максимальное расстояние для прыжка
+    int limitSwim; //Максимальное расстояние для плавания
+
+    //Метод бега животного
     public void run(){
-        System.out.println(name + " run!");
+        if(run < limitRun){
+            System.out.println(name + " running " + run + " meters");
+            System.out.println("result: true");;
+        } else {
+            System.out.println(name + " can't run so much");
+            System.out.println("result: false");
+        }
     }
 
+    //Метод прыжка животного
     public void jump(){
-        System.out.println(name + " jumped an obstacle at " + length + " meters" );
-    }
-
-    public void swim(){
-        System.out.println(name + " swim.");
+       if(jump < limitJump){
+           System.out.println(name + " jumped an obstacle at " + jump + " centimeters" );
+           System.out.println("result: true");;
+       } else {
+           System.out.println(name + "very high");
+           System.out.println("result: false");
+       }
     }
 
 }
