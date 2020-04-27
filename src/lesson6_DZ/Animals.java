@@ -20,6 +20,7 @@ public class Animals {
             System.out.println(name + " can't run so much");
             System.out.println("result: false");
         }
+
     }
 
     //Метод прыжка животного
@@ -28,9 +29,10 @@ public class Animals {
            System.out.println(name + " jumped an obstacle at " + jump + " centimeters" );
            System.out.println("result: true");;
        } else {
-           System.out.println(name + "very high");
-           System.out.println("result: false");
-       }
+            System.out.println(name + "very high");
+            System.out.println("result: false");
+        }
+
     }
 
 }
