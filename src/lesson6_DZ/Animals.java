@@ -3,7 +3,7 @@ package lesson6_DZ;
 public class Animals {
     String name; //Имя животного
     String color; //Окраска
-    int age; //Во3раст
+    int age; //Возраст
     int jump; //Прыжок
     int run; //Бег
     int swim; //Плавание
